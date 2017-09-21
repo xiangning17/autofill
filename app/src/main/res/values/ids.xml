@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="android_list_container" type="id">@android:id/list_container</item>
+</resources>

@@ -1,0 +1,64 @@
+<resources>
+    <attr name="pwdEditPreferenceStyle" format="reference" />
+    <attr name="buttonPreferenceStyle" format="reference" />
+    <attr name="editablePreferenceStyle" format="reference" />
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!-- for preference fragment-->
+        <item name="preferenceTheme">@style/SettingsPreferenceTheme</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="SettingsPreferenceTheme" parent="@style/PreferenceThemeOverlay.v14.Material">
+
+        <item name="ParentalControlBasePreferenceStyle">@style/PcBasePrefStyle</item>
+
+        <item name="preferenceFragmentStyle">@style/PreferenceFragment.Material</item>
+        <item name="editTextPreferenceStyle">@style/pwdEditPreferenceStyle</item>
+        <item name="buttonPreferenceStyle">@style/buttonPreferenceStyle</item>
+        <!--<item name="android:widgetLayout">@layout/pwd_pref_widget_switch</item>-->
+    </style>
+
+    <style name="PcBasePrefStyle">
+        <item name="iconTint">@color/colorAccent</item>
+        <item name="layout">@layout/preference_material_settings</item>
+        <item name="android:widgetLayout">@layout/pref_widget_image</item>
+    </style>
+
+    <style name="PreferenceFragment.Material.ButtonBar">
+        <item name="android:layout">@layout/preference_fragment</item>
+    </style>
+
+    <style name="DefaultPwdEditPreferenceStyle.NoWidget" parent="Preference.DialogPreference.EditTextPreference.Material">
+        <item name="android:widgetLayout">@null</item>
+    </style>
+
+    <style name="DefaultPwdEditPreferenceStyle" >
+        <item name="android:widgetLayout">@layout/pwd_pref_widget_switch</item>
+    </style>
+
+    <style name="pwdEditPreferenceStyle" parent="@style/Preference.DialogPreference.EditTextPreference.Material">
+        <!--<item name="android:widgetLayout">@layout/pwd_pref_widget</item>-->
+        <item name="android:dialogLayout">@layout/pwd_preference_dialog_edittext</item>
+    </style>
+
+    <style name="buttonPreferenceStyle">
+        <item name="android:layout">@layout/center_button</item>
+    </style>
+    <style name="editablePreferenceStyle">
+        <item name="android:layout">@layout/center_button</item>
+    </style>
+</resources>

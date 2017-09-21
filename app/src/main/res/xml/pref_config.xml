@@ -1,0 +1,23 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference
+        android:key="title"
+        android:selectable="false"
+        android:persistent="false"/>
+<!--    <PreferenceCategory
+        android:key="title">
+
+    </PreferenceCategory>-->
+
+    <!--<com.example.ningxiang.autofill.ButtonPreference-->
+        <!--android:key="ok"-->
+        <!--android:persistent="false"-->
+        <!--android:order="1000"-->
+        <!--/>-->
+
+<!--    <Preference
+        android:key="ok"
+        android:persistent="false"
+        android:order="1000"
+        android:layout="@layout/center_button"/>-->
+
+</PreferenceScreen>
